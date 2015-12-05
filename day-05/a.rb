@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-
 nice_rx = [
   /(?:[aeiou].*){3,}/,
   /(.)\1/,
@@ -11,7 +10,6 @@ naughty_rx = [
 ]
 
 count = 0
-
 
 ARGF.each_line do |l|
   is_nice =
