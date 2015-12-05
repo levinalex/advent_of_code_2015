@@ -15,7 +15,7 @@ class World
   end
 
   def move(dir)
-    @visits[@position] += 1
+    @visits[@position.join(",")] += 1
 
     delta = Directions[dir]
     @position[0] += delta[0]
