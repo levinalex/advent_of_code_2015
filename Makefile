@@ -37,3 +37,8 @@ all: 1 2 3
 			./day-06/a.rb 1000 < data/day-06.input.txt; \
 			./day-06/b.rb 1000 < data/day-06.input.txt; \
 		)
+
+7:
+	@diff -u data/day-07.expected <( \
+			./day-07/a.rb < data/day-07.input.txt; \
+		)
